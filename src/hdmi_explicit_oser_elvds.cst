@@ -1,0 +1,35 @@
+// Tang Nano 9K HDMI constraints
+// Top module: top
+// Important: For ELVDS_OBUF, constrain the POSITIVE port name only.
+// The two pin numbers are the P,N pair.
+
+// HDMI TMDS differential pairs
+IO_LOC "tmds_d_p[0]" 71,70;
+IO_PORT "tmds_d_p[0]" PULL_MODE=NONE DRIVE=8;
+
+IO_LOC "tmds_d_p[1]" 73,72;
+IO_PORT "tmds_d_p[1]" PULL_MODE=NONE DRIVE=8;
+
+IO_LOC "tmds_d_p[2]" 75,74;
+IO_PORT "tmds_d_p[2]" PULL_MODE=NONE DRIVE=8;
+
+IO_LOC "tmds_clk_p" 69,68;
+IO_PORT "tmds_clk_p" PULL_MODE=NONE DRIVE=8;
+
+// Tang Nano 9K onboard 27 MHz clock
+IO_LOC "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// Debug LEDs - active-low on Tang Nano 9K
+IO_LOC "led1" 10;
+IO_PORT "led1" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "led2" 11;
+IO_PORT "led2" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "led3" 13;
+IO_PORT "led3" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "led4" 14;
+IO_PORT "led4" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "led5" 15;
+IO_PORT "led5" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
+IO_LOC "led6" 16;
+IO_PORT "led6" IO_TYPE=LVCMOS18 PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
