@@ -1,9 +1,1 @@
 This code works only with some monitors.
-
-There is a bug, The code output color information during blanking.
-
-I will update this repository when ChatGPT fixes the problem.
-
-ChatGPT has a fix but I need to test it.
-
-This code is still a good starting point for the HDMI port on the Tang Naon 9K.
